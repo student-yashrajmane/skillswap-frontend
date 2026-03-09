@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import api from './api'; // Ensure this points to your axios/api config
-import { toast } from 'react-toastify';
+
 
 const AboutPage = () => {
   // 1. State to hold dynamic stats

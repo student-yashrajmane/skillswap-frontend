@@ -56,7 +56,7 @@ const QuizPage = () => {
     }
   }, [userAnswers, token, navigate, isSubmitting]);
 
-  // Timer Effect
+ // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (quizData.length === 0) return;
 
