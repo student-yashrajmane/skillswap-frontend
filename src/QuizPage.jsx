@@ -2,13 +2,16 @@ import React, { useState, useEffect, useCallback } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import api from "./api";
 import { toast } from "react-toastify";
+import { useMemo } from "react";
 
 const QuizPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
 
-  const quizData = location.state?.quiz || [];
+  const quizData = useMemo(() => {
+  return location.state?.quiz || [];
+}, [location.state]);
   const [userAnswers, setUserAnswers] = useState({});
   const [timeLeft, setTimeLeft] = useState(600); // 10 minutes
   const [isSubmitting, setIsSubmitting] = useState(false);
