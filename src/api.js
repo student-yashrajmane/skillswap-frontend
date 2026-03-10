@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://backend-skillswap-production-2eb9.up.railway.app'
+    baseURL: 'https://skill-swap-0yyf.onrender.com'
 });
 
 // ✅ Attach token ONLY if it exists
