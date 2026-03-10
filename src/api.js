@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://skillswap-backend-5o3p.onrender.com'
+    baseURL: 'https://skillswapbackend.up.railway.app'
 });
 
 // ✅ Attach token ONLY if it exists
