@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://skillswapbackend.up.railway.app'
+    baseURL: 'https://skillswapbackend.up.railway.app/SkillSwap'
 });
 
 // ✅ Attach token ONLY if it exists
