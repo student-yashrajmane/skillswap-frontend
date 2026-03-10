@@ -26,7 +26,7 @@ const MyProfile = () => {
       }
 
       try {
-        const response = await fetch(`https://skillswap-backend-5o3p.onrender.com/api/user/myprofile?username=${username}`, {
+        const response = await fetch(`https://skill-swap-0yyf.onrender.com/api/user/myprofile?username=${username}`, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`,
