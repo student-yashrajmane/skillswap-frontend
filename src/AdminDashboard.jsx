@@ -50,7 +50,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const stompClient = new Client({
       // Keeping your exact port and path
-      webSocketFactory: () => new SockJS('https://skillswap-backend-5o3p.onrender.com/ws-activity'),
+      webSocketFactory: () => new SockJS('http://localhost:5051/ws-activity'),
       reconnectDelay: 5000,
     });
 

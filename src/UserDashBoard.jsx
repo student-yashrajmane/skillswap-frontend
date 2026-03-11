@@ -99,7 +99,7 @@ const UserDashboard = () => {
     try {
       setIsSendingRequest(true);
       const response = await api.get(`/api/user/send-request`, {
-        params: { sender: user.username, receiver: receiverUsername },
+        params: { senderName: user.username, receiverName: receiverUsername },
         headers: { Authorization: `Bearer ${token}` }
       });
 

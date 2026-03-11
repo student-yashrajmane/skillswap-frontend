@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://skill-swap-0yyf.onrender.com'
+    baseURL: 'http://localhost:9070/SkillSwap'
 });
 
 // ✅ Attach token ONLY if it exists
